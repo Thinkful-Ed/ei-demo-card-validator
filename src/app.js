@@ -6,7 +6,7 @@ export default function App() {
     return (
         <div className="card-validity">
             <Input />
-            <Validity />
+            <Validity number={79927398713} />
         </div>
     );
 }
