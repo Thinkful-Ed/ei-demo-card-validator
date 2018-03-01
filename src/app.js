@@ -13,7 +13,10 @@ export default class App extends React.Component {
     render() {
         return (
             <div className="card-validity">
-                <Input />
+                <Input
+                    value={this.state.number}
+                    onValueChange={value => this.setState({number: value})}
+                />
                 <Validity number={this.state.number} />
             </div>
         );
